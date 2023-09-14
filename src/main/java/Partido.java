@@ -41,6 +41,23 @@ public class Partido {
 		super();
 	}
 
-	public registrarPartido(String equipoRival, String resultado, String fecha, String lugar)
+	public void registrarPartido(String equipoRival, String resultado, String fecha, String lugar) {
+		Equipo equipoLocal = buscarEquipoLocalPorNombre(equipoRival);
+
+		if (equipoLocal != null) {
+			// Crear una nueva instancia de Partido con la información proporcionada.
+			Partido partido = new Partido();
+			partido.setEquipoRival(equipoRival);
+			partido.setResultado(resultado);
+			// Parsear la fecha a un objeto Date, dependiendo del formato de fecha que estés utilizando.
+			// partido.setFecha(fecha);
+			partido.setLugar(lugar);
+
+			// Agregar el partido al historial de partidos del equipo local.
+			equipoLocal.agregarPartido(partido);
+		} else {
+			System.out.println("Equipo local no encontrado."); // Manejo de error si el equipo local no se encuentra.
+		}
+	}
 
 }

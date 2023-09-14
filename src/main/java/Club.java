@@ -15,14 +15,18 @@ public class Club {
 	}
 
 	public void agregarDeportista(Deportista deportista) {
-		throw new UnsupportedOperationException();
+		deportista.add(deportista);
 	}
 
 	public void agregarEntrenador(Entrenador entrenador) {
-		throw new UnsupportedOperationException();
+		entrenador.add(entrenador);
 	}
 
 	public Club(String nombre) {
 		super();
+	}
+
+	public void agregarEquipo(Equipo equipo){
+		equipo.add(equipo);
 	}
 }

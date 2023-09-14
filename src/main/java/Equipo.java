@@ -16,10 +16,19 @@ public class Equipo {
 	}
 
 	public ArrayList<Deportista> listaDeDeportistas(Deportista deportista) {
-		throw new UnsupportedOperationException();
+		ArrayList<Deportista> deportistasRepetidos = new ArrayList<>();
+
+		for (Deportista d : deportistas) {
+			if (d.getNombre().equals(deportista.getNombre())) {
+				deportistasRepetidos.add(d);
+			}
+		}
+
+		return deportistasRepetidos;
+	}
 	}
 
 	public Equipo(String historialPartidos) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }
