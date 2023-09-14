@@ -16,16 +16,8 @@ public class Equipo {
 	}
 
 	public ArrayList<Deportista> listaDeDeportistas(Deportista deportista) {
-		ArrayList<Deportista> deportistasRepetidos = new ArrayList<>();
+		return deportista;
 
-		for (Deportista d : deportistas) {
-			if (d.getNombre().equals(deportista.getNombre())) {
-				deportistasRepetidos.add(d);
-			}
-		}
-
-		return deportistasRepetidos;
-	}
 	}
 
 	public Equipo(String historialPartidos) {

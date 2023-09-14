@@ -26,6 +26,11 @@ public class Deportista extends Persona {
 	}
 
 	public void agregarEstadistica(Deporte deporte, String rol, int experiencia) {
-		;
+		String claveEstadistica = deporte.getNombre() + "-" + rol;
+		if (!estadisticas.containsKey(claveEstadistica)) {
+			estadisticas.put(claveEstadistica, new EstadisticaDeportista());
+		}
+		EstadisticaDeportista estadistica = estadisticas.get(claveEstadistica);
+		estadistica.setExperiencia(experiencia);
 	}
 }

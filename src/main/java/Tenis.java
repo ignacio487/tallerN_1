@@ -19,10 +19,10 @@ public class Tenis extends Deporte {
 	}
 
 	public Tenis(String superficieDeLaCancha, String tipoDePartido) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		;
 	}
 }

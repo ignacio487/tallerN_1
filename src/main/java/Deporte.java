@@ -22,4 +22,14 @@ public abstract class Deporte {
 	public Deporte(String tipo) {
 		super();
 	}
+
+	Futbol futbol = new Futbol("sintetico", "local");
+	String tipoFutbol = futbol.getTipo(); // Devuelve "Futbol"
+
+	Baloncesto baloncesto = new Baloncesto("exterior", "4");
+	String tipoBaloncesto= Baloncesto.getTipo(); // Devuelve "Baloncesto"
+
+	Tenis tenis = new Tenis("dura", "dobles");
+	String tipoTenis= Tenis.getTipo(); // Devuelve "Tenis"
+
 }

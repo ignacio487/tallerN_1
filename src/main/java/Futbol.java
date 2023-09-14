@@ -19,10 +19,10 @@ public class Futbol extends Deporte {
 	}
 
 	public Futbol(String tipoDeCampo, String condicion) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		;
 	}
 }

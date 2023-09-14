@@ -37,6 +37,6 @@ public class Persona {
 	}
 
 	public Persona(String nombre, String apellido, String direccionDeCorreo, String numeroDeContacto) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }
