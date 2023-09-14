@@ -23,6 +23,6 @@ public class Club {
 	}
 
 	public Club(String nombre) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }

@@ -21,6 +21,6 @@ public class Entrenador extends Persona {
 	}
 
 	public Entrenador(String experiencia, String especialidadDpeotiva) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }

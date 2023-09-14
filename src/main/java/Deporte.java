@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Vector;
 
 public abstract class Deporte {
@@ -19,6 +20,6 @@ public abstract class Deporte {
 	}
 
 	public Deporte(String tipo) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }

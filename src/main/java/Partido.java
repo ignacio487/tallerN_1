@@ -38,6 +38,9 @@ public class Partido {
 	}
 
 	public Partido(String equipoRival, String resultado, String fecha, String lugar) {
-		throw new UnsupportedOperationException();
+		super();
 	}
+
+	public registrarPartido(String equipoRival, String resultado, String fecha, String lugar)
+
 }

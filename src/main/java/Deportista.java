@@ -5,14 +5,6 @@ public class Deportista extends Persona {
 	private Club club;
 	public Deporte unnamed_Deporte_;
 
-	public String getDeporte() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void setDeporte(String deporte) {
-		throw new UnsupportedOperationException();
-	}
-
 	public String getRol() {
 		return this.rol;
 	}
@@ -22,7 +14,7 @@ public class Deportista extends Persona {
 	}
 
 	public Deportista(Deporte deporte, String rol, int experiencia) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 
 	public int getExperiencia() {
@@ -34,6 +26,6 @@ public class Deportista extends Persona {
 	}
 
 	public void agregarEstadistica(Deporte deporte, String rol, int experiencia) {
-		throw new UnsupportedOperationException();
+		;
 	}
 }
