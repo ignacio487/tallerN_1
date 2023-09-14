@@ -26,11 +26,12 @@ public class Deportista extends Persona {
 	}
 
 	public void agregarEstadistica(Deporte deporte, String rol, int experiencia) {
-		String claveEstadistica = deporte.getNombre() + "-" + rol;
-		if (!estadisticas.containsKey(claveEstadistica)) {
-			estadisticas.put(claveEstadistica, new EstadisticaDeportista());
+		// Verifica que el deporte y el rol coincidan con los del deportista.
+		if (this.deporte.equals(deporte) && this.rol.equals(rol)) {
+			// Agrega las estadísticas al deportista.
+			this.experiencia = experiencia;
+		} else {
+			System.out.println("No se pueden agregar estadísticas: deporte o rol incorrectos.");
 		}
-		EstadisticaDeportista estadistica = estadisticas.get(claveEstadistica);
-		estadistica.setExperiencia(experiencia);
 	}
 }

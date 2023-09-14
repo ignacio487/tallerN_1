@@ -23,6 +23,13 @@ public class Futbol extends Deporte {
 	}
 
 	public String getTipo() {
-		;
+		return getTipo();
+	}
+
+	public void mostrarDetalles(Futbol futbol) {
+		Futbol futbol1 = (Futbol) tipoFutbol;
+		System.out.println("Tipo de campo:sintetico");
+		System.out.println("Tipo de campo " + futbol.getTipoDeCampo());
+		System.out.println("Condicion:local " + futbol.getCondicion());
 	}
 }

@@ -23,6 +23,13 @@ public class Baloncesto extends Deporte {
 	}
 
 	public String getTipo() {
-		;
+		return getTipo();
+	}
+
+	public void mostrarDetalles(Baloncesto baloncesto) {
+		Baloncesto baloncesto1 = (Baloncesto) tipoBaloncesto;
+		System.out.println("tipo de la cancha:exterior");
+		System.out.println("tipo de la cancha" + baloncesto.getTipoDeCancha());
+		System.out.println("NumeroDeTiempos:4" + baloncesto.getTiemposJugados();
 	}
 }

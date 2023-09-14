@@ -23,6 +23,13 @@ public class Tenis extends Deporte {
 	}
 
 	public String getTipo() {
-		;
+		return getTipo();
+	}
+
+	public void mostrarDetalles(Tenis tenis) {
+		Tenis tenis1 = (Tenis) tipoTenis;
+		System.out.println("superficie de la cancha:dura");
+		System.out.println("superficie de la cancha" + tenis.getSuperficieDeLaCancha());
+		System.out.println("TipoDePartido:dobles " + tenis.getTipoDePartido());
 	}
 }
